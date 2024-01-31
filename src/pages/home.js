@@ -454,7 +454,7 @@ const Home = () => {
                     
                     
                     <div className='header-1'>
-                        <div className='catogories'>
+                        <div className='catogories' style={{maxWidth:"100%",display:"flex",alignItems:"center",justifyContent:"start",paddingLeft:"20px"}} >
                             <label>Trending</label>
                             <div className='pill'></div>
                         </div>
@@ -504,7 +504,7 @@ const Home = () => {
                     
                    
                     <div className='header-1' style={{justifyContent:"start"}}>
-                        <div className='catogories'>
+                        <div className='catogories' style={{maxWidth:"100%",display:"flex",alignItems:"center",justifyContent:"start",paddingLeft:"20px"}}>
                             <label>catagory</label>
                             <div className='pill'></div>
                         </div>
