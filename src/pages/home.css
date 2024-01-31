@@ -28,7 +28,8 @@
     position: fixed;
     left: 0;
     top: 0;
-    width: 12%;
+    min-width: 70px;
+    max-width: 1500px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -46,6 +47,7 @@
     flex-direction: column;
     gap: 3px;
     justify-content: center;
+    text-align: center;
 }
 
 .menuhead,.following>label{
@@ -54,8 +56,10 @@
 }
 .menu > div{
     display: flex;
+    /* aspect-ratio: 1/1; */
     gap: 15px;
     align-items: center;
+    justify-content: center;
     padding: 5px 10px;
     border-radius: 3px;
 }
@@ -167,26 +171,27 @@
     padding-bottom: 10px;
     flex-direction: column;
     gap: 20px;
-    margin-left: 6vw;
+    /* margin-left: 6vw; */
     position: relative;
     /* flex-wrap: wrap; */
 }
 
 .header{
-    width: 92%;
+    /* width: 100%; */
     display: flex;
     align-items: center;
     justify-content:space-between;
     flex-wrap: wrap;
-    padding: 10px 0px 0px 0px;
+    /* padding: 10px 0px 0px 0px; */
     z-index: 10;
     position: fixed;
 }
 .header-left{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    gap: 15px;
+    justify-content: start;
+    /* gap: 15px; */
     perspective: 10000px;
 }
 .menu-arrow{
@@ -199,9 +204,10 @@
     justify-content: center;
     transition: all 0.5s;
     background-color: rgb(19, 19, 19);
-    position: absolute;
-    left: 30px;
-    top: 30px;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 100;
 }
 .menu-arrow > i{
     color: white;
@@ -265,27 +271,27 @@
 }
 
 .items-container{
-    width: 99%;
+    max-width: 100vw;
     height: 95vh;
     overflow-y: scroll;
-    padding: 5px 10px 10px 10px;
+    /* padding: 5px 10px 10px 10px; */
     justify-content: center;
 }
 
 .main-center-body{
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     /* flex-wrap: wrap; */
     justify-content: center;
     /* align-items: center; */
     gap: 15px;
-    margin-top: 0px;
 }
 .slider{
     max-width: 100%;
     display: flex;
-    gap: 30px;
-    /* overflow: hidden; */
+    gap: 10px;
+    overflow: hidden;
     /* flex-wrap: 1 1 100%; */
     /* flex-wrap: wrap; */
 }
@@ -319,7 +325,7 @@
 .catogories{
     display: flex;
     gap: 25px;
-    margin: 0 10px;
+    /* margin: 0 10px; */
     justify-content: center;
     align-items: center;
     min-width: 100px;
@@ -352,7 +358,6 @@
     align-items: center;
     /* justify-content: center; */
     gap: 30px;
-    /* overflow: hidden; */
     transition: all 0.2s;
 }
 .continue-watching-container-in-home{
@@ -389,7 +394,7 @@
 }
 
 .allmoviecontainer-container{
-    width: 92vw;
+    max-width: 100vw;
 }
 
 .home-trending-card-container{
@@ -453,6 +458,61 @@
     height: 2px;
     background-color: var(--grey_darklight);
 }
-@media only screen and (max-width: 1400px){
+
+.header-top-center-menu-bar{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    justify-content: end;
+}
+
+.header-search-container-mobile{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px;
+    margin: 0px;
+    /* background-color: white; */
+}
+.recent-history-container{
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.recent-history-container div{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    /* background-color: black; */
+    height: 50px;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+    /* box-shadow: 0px 4px 5px grey; */
+}
+.recent-history-container div i{
+    scale: 1.3;
+}
+.recent-history-container div label{
+    font-size: 20px;
+}
+.header-search-container-mobile .search{
+    width: 90vw;
+    gap: 0px;
+    align-items: center;
+    justify-content: start;
+}
+
+@media only screen and (max-width: 800px){
     
 }

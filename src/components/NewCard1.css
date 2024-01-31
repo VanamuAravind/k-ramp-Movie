@@ -1,7 +1,6 @@
 .new-card-1-main-container{
-    /* flex: 1 0 180px; */
-    min-width: 180px;
-    max-width: 18vw;
+    min-width: 20px;
+    max-width: 20%;
     height: 322px;
     background-color: red;
     border-radius: 15px;

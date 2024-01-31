@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
+      {/* <AllMovieContainer/> */}
       <Home/>
       {/* <NewCard1/> */}
       {/* <Footer/> */}

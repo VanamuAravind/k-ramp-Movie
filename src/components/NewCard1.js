@@ -6,9 +6,9 @@ import img1 from '../images/bossbaby.jpg'
 import img2 from '../images/spiderman.jpg'
 const NewCard1 = (props) => {
   return (
-    <div className='new-card-1-main-container'>
+    <div className='new-card-1-main-container' style={{width:(props.windowWidth<800)?"25%":"20%",minWidth:(props.windowWidth<800)?"80vw":null}}>
       <div className='new-card-1-image-container'>
-        <img src={props.image} alt='no image'/>
+        <img src={props.image} style={{}} alt='no image'/>
       </div>
       <div className='new-card-1-main-bottom-container'>
         <div className='new-card-1-main-bottom-genre-holder'>

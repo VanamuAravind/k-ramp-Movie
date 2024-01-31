@@ -2,7 +2,7 @@ import React from 'react'
 import './ContinueWatching.css'
 const ContinueWatching = (props) => {
   return (
-    <div className='conwat-main-container'>
+    <div className='conwat-main-container' style={{width:(props.windowWidth<=800)?"75vw":"330px"}}>
       <img src={props.image}/>
       <div className='name-and-progess-bar'>
         <label className='conwat-movie-name'>{props.name}</label>
