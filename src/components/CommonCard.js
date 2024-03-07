@@ -8,6 +8,9 @@ const CommonCard = (props) => {
       <img src={props.image}/>
       <label>{props.name}</label>
       <div className='common-card-backshadow'></div>
+      <div className='common-card-hover-container'>
+        <i class="fa-solid fa-arrow-left"></i>
+      </div>
     </div>
   )
 }

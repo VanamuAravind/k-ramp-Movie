@@ -147,3 +147,6 @@ const AllMovieContainer = () => {
 }
 
 export default AllMovieContainer
+
+
+
